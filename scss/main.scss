@@ -1,27 +1,14 @@
 @import "abstracts/variables";
+
 @import "base/reset";
+
+
 @import "base/typography";
 
+@import "components/card";
 
-.main-nav{
-    background-color: $color-bg-primary;
-    color: $color-text-light;
-    display: flex;
-    align-items: center;
+@import "layout/header";
 
-    .nav-links{
-        padding: 2rem;
-        .nav-item{
-            text-decoration: none;
-            color: $color-text-light;
-            &.active{
-                color:cornflowerblue;
-                font-weight: bold;
-            }
-            &:hover{
-                font-size: 1.2rem;
-                color: darkred;
-            }
-        }
-    }
-}
+@import "pages/home";
+
+// Comentario
