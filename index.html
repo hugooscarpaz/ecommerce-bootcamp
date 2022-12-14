@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,17 +8,121 @@
     <title>Home - Ecommerce</title>
     <link rel="stylesheet" href="/css/main.css">
 </head>
+
 <body>
     <header>
-        <nav class="main-nav">
-            <div class="nav-links">
-                <a href="" class="nav-item active">Link 1</a>
-                <a href="" class="nav-item">Link 2</a>
-                <a href="" class="nav-item">Link 3</a>
-                <a href="" class="nav-item">Link 4</a>
-            </div>
+        <nav class="navbar">
+            <a href="/index.html" class="navbar_nav-link">
+                <img class="navbar__logo" src="/assets/images/Logo.jpg" alt="Logo del Ecommerce" width="50">
+            </a>
+            <ul class="navbar__nav_links-container"">
+                    <li class=" navbar__nav-item">
+                <a href="/index.html" class="navbar__nav-link">Inicio</a>
+                </li>
+                <li class="navbar__nav-item">
+                    <a href="/pages/contact/contact.html" class="navbar__nav-link">Contacto</a>
+                </li>
+                <li class="navbar__nav-item">
+                    <a href="/pages/about-us/about-us.html" class="navbar__nav-link">Nosotros</a>
+                </li>
+                <li class="navbar__nav-item">
+                    <a href="/pages/register/register.html" class="navbar__nav-link">Registrarse</a>
+                </li>
+            </ul>
         </nav>
+        <div class="user-navbar">
+            <div class="uset-navbar__cart-container">
+                <!-- agregar font icon y icon item, avatar de la persono logueada y nombre -->
+            </div>
+        </div>
     </header>
-    
+    <!-- IMPLEMENTAR CARROUSELL EN 2º MODULO-->
+    <main>
+        <section class="section-card">
+            <header class="section-cards__header" >
+                <div class="section-cards__title-container">
+                    <h1 class="section-cards__title">Lorem ipsum dolor sit amet.</h1>
+                <p class="section-cards__subtitle">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae itaque est excepturi voluptatum neque ratione.</p>
+                </div>
+                <div class="section-cards__products-search-container">
+                    <div class="product-search">
+                        <label for="" class="product-search__label">Buscar</label>
+                        <input type="text" class="product-search__imput">
+                        <button class="product-search__btn" >Buscar</button>
+                    </div>
+                    <div class="section-cards__products-count">
+                        se encontraron X productos
+                    </div>
+                </div>
+            </header>
+            <div class="cards-container">
+                <h1 class="cards-container__category">
+                    CATEGORIA OFERTAS
+                </h1>
+                <article class="card">
+                    <div class="card__header">
+                        <img src="#" alt="#" class="card__img">
+                    </div>
+                    <div class="card__title">
+                        PRODUCT NAME 
+                    </div>
+                    <div class="card__description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur rerum quibusdam adipisci explicabo aliquam perspiciatis? Suscipit fugit provident commodi est.
+                    </div>
+                    <div class="card__price">
+                        $XXXXX
+                    </div>
+                    <div class="card__footer">
+                        <div class="card_date">13-12-2022</div>
+                        <div class="card__btn-container">
+                            Detalle
+                            <a class="card__btn" href="#"></a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+        </section>
+    </main>
+    <div class="whatsapp-container">
+        <a href="#" class="whatsapp-container__link">
+            <img src="#" alt="whatsapp contact link" class="whatsapp-container__img">
+        </a>
+    </div>
+    <footer class="footer">
+        <div class="footer__column">
+            <ul class="footer__social-media-container">
+                <li class="footer_social-media-item">
+                    <a href="#" class="footer_social-media-link" >Facebook</a>
+                </li>
+                <li class="footer_social-media-item">
+                    <a href="#" class="footer_social-media-link" >Ig</a>
+                </li>
+                <li class="footer_social-media-item">
+                    <a href="#" class="footer_social-media-link" >Linkedin</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer__column">
+            Logo
+            copyright
+        </div>
+        <div class="footer__column">
+            <ul class="footer__social-media-container">
+                <li class="footer_contact-item">
+                    <a href="#" class="footer_contact-link" >Telefono</a>
+                </li>
+                <li class="footer_contact-item">
+                    <a href="#" class="footer_contact-link" >Ubicación</a>
+                </li>
+                <li class="footer_contact-item">
+                    <a href="#" class="footer_contact-link" >e-mail</a>
+                </li>
+            </ul>
+
+        </div>
+    </footer>
+
 </body>
+
 </html>

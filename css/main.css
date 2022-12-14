@@ -9,7 +9,7 @@
 
 a {
   text-decoration: none;
-  color: #fff;
+  color: rgb(172, 28, 28);
 }
 
 body {
@@ -23,7 +23,7 @@ body {
 
 .main-nav {
   background-color: rgb(15, 34, 156);
-  color: rgb(255, 255, 255);
+  color: rgb(102, 20, 233);
   height: 60px;
   display: flex;
   align-items: center;
@@ -33,7 +33,7 @@ body {
 }
 .main-nav .nav-links .nav-item {
   text-decoration: none;
-  color: rgb(255, 255, 255);
+  color: rgb(102, 20, 233);
 }
 .main-nav .nav-links .nav-item.active {
   color: cornflowerblue;
