@@ -11,12 +11,22 @@
 </head>
 
 <body>
-    <header>
+    <header class="header">
         <nav class="navbar">
             <a href="/index.html" class="navbar_nav-link">
-                <img class="navbar__logo" src="/assets/images/Logo.jpg" alt="Logo del Ecommerce" width="50">
+                <img class="navbar__logo" src="/assets/images/Logo.jpg" alt="Logo del Ecommerce">
             </a>
-            <ul class="navbar__nav_links-container"">
+            <input type="checkbox" class="navbar__menu-btn" id="menu-btn">
+            
+            <label for="menu-btn" class="navbar__menu-label">
+                <span class="navbar__menu-icon"></span>
+            </label>
+            
+
+
+
+
+            <ul class="navbar__nav_links-container">
                     <li class=" navbar__nav-item">
                 <a href="/index.html" class="navbar__nav-link">Inicio</a>
                 </li>
@@ -81,6 +91,69 @@
                         </div>
                     </div>
                 </article>
+                <article class="card">
+                    <div class="card__header">
+                        <img src="#" alt="#" class="card__img">
+                    </div>
+                    <div class="card__title">
+                        PRODUCT NAME 
+                    </div>
+                    <div class="card__description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur rerum quibusdam adipisci explicabo aliquam perspiciatis? Suscipit fugit provident commodi est.
+                    </div>
+                    <div class="card__price">
+                        $XXXXX
+                    </div>
+                    <div class="card__footer">
+                        <div class="card_date">13-12-2022</div>
+                        <div class="card__btn-container">
+                            Detalle
+                            <a class="card__btn" href="#"></a>
+                        </div>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="card__header">
+                        <img src="#" alt="#" class="card__img">
+                    </div>
+                    <div class="card__title">
+                        PRODUCT NAME 
+                    </div>
+                    <div class="card__description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur rerum quibusdam adipisci explicabo aliquam perspiciatis? Suscipit fugit provident commodi est.
+                    </div>
+                    <div class="card__price">
+                        $XXXXX
+                    </div>
+                    <div class="card__footer">
+                        <div class="card_date">13-12-2022</div>
+                        <div class="card__btn-container">
+                            Detalle
+                            <a class="card__btn" href="#"></a>
+                        </div>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="card__header">
+                        <img src="#" alt="#" class="card__img">
+                    </div>
+                    <div class="card__title">
+                        PRODUCT NAME 
+                    </div>
+                    <div class="card__description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur rerum quibusdam adipisci explicabo aliquam perspiciatis? Suscipit fugit provident commodi est.
+                    </div>
+                    <div class="card__price">
+                        $XXXXX
+                    </div>
+                    <div class="card__footer">
+                        <div class="card_date">13-12-2022</div>
+                        <div class="card__btn-container">
+                            Detalle
+                            <a class="card__btn" href="#"></a>
+                        </div>
+                    </div>
+                </article>
             </div>
 
         </section>
@@ -93,37 +166,53 @@
     <footer class="footer">
         <div class="footer__column">
             <ul class="footer__social-media-container">
-                <li class="footer_social-media-item">
-                    <i class="fa-brands fa-facebook footer__contact-icon"></i>
-                    <a href="#" class="footer_social-media-link" >Facebook</a>
+                <li class="footer__contact-item">
+                    
+                    <a href="#" class="footer__contact-link" >
+                        <i class="fa-brands fa-facebook footer__contact-icon footer__contact-icon--facebook"></i>Facebook
+                    </a>
                 </li>
-                <li class="footer_social-media-item">
-                    <i class="fa-brands fa-instagram footer__contact-icon"></i>
-                    <a href="#" class="footer_social-media-link" >Ig</a>
+                <li class="footer__contact-item">
+                    
+                    <a href="#" class="footer__contact-link" >
+                        <i class="fa-brands fa-instagram footer__contact-icon footer__contact-icon--instagram "></i>Instagram
+                    </a>
                 </li>
-                <li class="footer_social-media-item">
-                    <i class="fa-brands fa-linkedin footer__contact-icon"></i>
-                    <a href="#" class="footer_social-media-link" >Linkedin</a>
+                <li class="footer__contact-item">
+                    
+                    <a href="#" class="footer__contact-link" >
+                        <i class="fa-brands fa-linkedin footer__contact-icon footer__contact-icon--linkedin"></i>Linkedin
+                    </a>
                 </li>
             </ul>
         </div>
         <div class="footer__column">
             <img src="/assets/images/Logo.jpg" alt="Sentidos Logo" class="footer__logo" width="30" >
-            Nombre de la Empresa
+           <h2 class="footer__company-name">NOMBRE DE LA EMPRESA</h2>
+           <p class="footer__copyrigth">
+            Todos los derechos reservados de pepito
+           </p>
+            Nombre de la Empresa 
         </div>
         <div class="footer__column">
             <ul class="footer__social-media-container">
-                <li class="footer_contact-item">
-                    <i class="fa-solid fa-phone footer__contact-icon"></i>
-                    <a href="#" class="footer_contact-link" >Telefono</a>
+                <li class="footer__contact-item">
+                    
+                    <a href="#" class="footer__contact-link" >
+                        <i class="fa-solid fa-phone footer__contact-icon"></i>Teléfono
+                    </a>
                 </li>
-                <li class="footer_contact-item">
-                    <i class="fa-solid fa-location-dot footer__contact-icon"></i>
-                    <a href="#" class="footer_contact-link" >Ubicación</a>
+                <li class="footer__contact-item">
+                    
+                    <a href="#" class="footer__contact-link" >
+                        <i class="fa-solid fa-location-dot footer__contact-icon"></i>Ubicación
+                    </a>
                 </li>
-                <li class="footer_contact-item">
-                    <i class="fa-solid fa-envelope footer__contact-icon"></i>
-                    <a href="#" class="footer_contact-link" >e-mail</a>
+                <li class="footer__contact-item">
+                    
+                    <a href="#" class="footer__contact-link" >
+                        <i class="fa-solid fa-envelope footer__contact-icon"></i>e-mail
+                    </a>
                 </li>
             </ul>
 
