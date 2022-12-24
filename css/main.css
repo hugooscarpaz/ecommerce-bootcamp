@@ -13,6 +13,15 @@ a {
   display: inline-block;
 }
 
+html {
+  font-size: 12px;
+}
+
+@media screen and (min-width: 600px) {
+  html {
+    font-size: 16px;
+  }
+}
 body {
   font-family: "Inter", Arial, sans-serif;
 }
@@ -37,7 +46,7 @@ body {
   border-bottom: 2px solid orangered;
 }
 .card__description {
-  padding: 1rem 0;
+  padding: 1.5rem 0;
 }
 .card__price {
   font-weight: 500;
@@ -52,9 +61,15 @@ body {
 .card__date {
   color: aqua;
 }
+.card__btn {
+  padding: 1rem;
+  background-color: dodgerblue;
+}
+
 .header {
   position: fixed;
   width: 100%;
+  top: 0;
 }
 
 .navbar {
@@ -70,7 +85,6 @@ body {
 }
 .navbar__menu-label {
   color: rgb(255, 255, 255);
-  margin-left: auto;
   height: 42%;
   background-color: orangered;
   width: 42px;
@@ -143,6 +157,18 @@ body {
   color: rgb(255, 255, 255);
 }
 
+.user-navbar {
+  margin-left: auto;
+  color: white;
+  display: flex;
+  gap: 0.5rem;
+  padding: 0 1rem;
+  align-items: center;
+}
+.user-navbar__user-avatar {
+  width: 40px;
+}
+
 @media screen and (min-width: 600px) {
   .navbar__menu-label, .navbar__menu-btn {
     display: none;
@@ -154,11 +180,14 @@ body {
     width: auto;
     background-color: transparent;
   }
+  .navbar .user-navbar {
+    order: 3;
+  }
 }
 .main {
   padding: 1.5rem 0;
   margin-top: 50px;
-  background-color: rgb(5, 59, 41);
+  background-color: aliceblue;
 }
 
 .card-container {
@@ -217,6 +246,11 @@ body {
 .section-cards__products-search-container {
   padding: 1rem;
   background-color: cornflowerblue;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 }
 
 @media screen and (min-width: 1000px) {

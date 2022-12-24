@@ -16,17 +16,20 @@
             <a href="/index.html" class="navbar_nav-link">
                 <img class="navbar__logo" src="/assets/images/Logo.jpg" alt="Logo del Ecommerce">
             </a>
+            <div class="user-navbar">
+                <div class="uset-navbar__cart-container">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+                <div class="user-navbar__user-avatar">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Default_pfp.svg/100px-Default_pfp.svg.png" class="user-navbar__user-avatar" alt="Imagen de Usuario">
+                </div>
+            </div>
             <input type="checkbox" class="navbar__menu-btn" id="menu-btn">
             
             <label for="menu-btn" class="navbar__menu-label">
                 <span class="navbar__menu-icon"></span>
             </label>
-            
-
-
-
-
-            <ul class="navbar__nav_links-container">
+             <ul class="navbar__nav_links-container">
                     <li class=" navbar__nav-item">
                 <a href="/index.html" class="navbar__nav-link">Inicio</a>
                 </li>
@@ -41,11 +44,7 @@
                 </li>
             </ul>
         </nav>
-        <div class="user-navbar">
-            <div class="uset-navbar__cart-container">
-                <!-- agregar font icon y icon item, avatar de la persono logueada y nombre -->
-            </div>
-        </div>
+
     </header>
     <!-- IMPLEMENTAR CARROUSELL EN 2º MODULO-->
     <main class="main">
@@ -66,10 +65,11 @@
                     </div>
                 </div>
             </header>
+            <h1 class="cards-container__category">
+                CATEGORIA OFERTAS
+            </h1>
             <div class="cards-container">
-                <h1 class="cards-container__category">
-                    CATEGORIA OFERTAS
-                </h1>
+ 
                 <article class="card">
                     <div class="card__header">
                         <img src="#" alt="#" class="card__img">
@@ -165,7 +165,7 @@
     </div>
     <footer class="footer">
         <div class="footer__column">
-            <ul class="footer__social-media-container">
+            <ul class="footer__contact-container">
                 <li class="footer__contact-item">
                     
                     <a href="#" class="footer__contact-link" >
@@ -195,7 +195,7 @@
             Nombre de la Empresa 
         </div>
         <div class="footer__column">
-            <ul class="footer__social-media-container">
+            <ul class="footer__contact-container">
                 <li class="footer__contact-item">
                     
                     <a href="#" class="footer__contact-link" >

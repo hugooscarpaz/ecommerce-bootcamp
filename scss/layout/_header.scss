@@ -1,6 +1,7 @@
 .header{
     position: fixed;
     width: 100%;
+    top: 0;
 }
 
 .navbar{
@@ -16,7 +17,7 @@
     }
     &__menu-label{
         color: $color-text-ligth;
-        margin-left: auto;
+        //margin-left: auto;
         height: 42%;
         background-color: orangered;
         width: 42px;
@@ -102,6 +103,19 @@
     }
 }
 
+.user-navbar{
+   
+    margin-left: auto;
+    color: white;
+    display: flex;
+    gap: .5rem;
+    padding: 0 1rem;
+    align-items: center;
+    &__user-avatar{
+        width: 40px;
+    }
+}
+
 @media screen and (min-width:600px) {
     .navbar{
         &__menu-label, &__menu-btn{
@@ -113,6 +127,9 @@
             height: 100% !important;
             width: auto;
             background-color: transparent;
+        }
+        .user-navbar{
+            order:3;
         }
     }
 }
