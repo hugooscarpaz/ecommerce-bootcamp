@@ -1,4 +1,40 @@
 .card {
+
+        margin: 1rem;
+        border: 1px solid red;
+   &__header{
+    height: 120px;
+    background-color: orange;
+   }
+   &__img{
+    height: 120px;
+   }
+   &__body{
     padding: 1rem;
-    border: 1px solid $color-bg-primary;
+   }
+   &__title{
+    font-weight: 500;
+    font-size: 1.5rem;
+    border-bottom: 2px solid orangered;
+       }
+   &__description{
+    padding: 1rem 0;
+   }
+   &__price{
+    font-weight: 500;
+    font-size: 1.25rem;
+    color: $color-bg-primary;
+   }
+   &__footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+   }
+   &__date{
+    color: aqua;
+   }
+   &__btn-container{
+    
+   }
+   &__btn{}
 }
