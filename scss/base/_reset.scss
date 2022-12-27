@@ -16,6 +16,14 @@ html{
     font-size: 12px;
 }
 
+@font-face {
+    font-family: 'scriptina';
+    src: url('/assets/fonts/SCRIPTIN.ttf') format("truetype");
+    font-weight: normal;
+    font-style:italic;
+    text-transform: capitalize;
+ }
+
 @media screen and (min-width:600px) {
     html{
         font-size: 16px;

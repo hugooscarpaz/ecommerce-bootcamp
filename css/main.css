@@ -17,6 +17,13 @@ html {
   font-size: 12px;
 }
 
+@font-face {
+  font-family: "scriptina";
+  src: url("/assets/fonts/SCRIPTIN.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+  text-transform: capitalize;
+}
 @media screen and (min-width: 600px) {
   html {
     font-size: 16px;
@@ -187,11 +194,20 @@ body {
 .main {
   padding: 1.5rem 0;
   margin-top: 50px;
-  background-color: aliceblue;
+  background-color: #F65601;
 }
 
 .card-container {
   display: grid;
+}
+
+.section-cards__title {
+  font-family: "scriptina";
+  font-size: larger;
+  color: white;
+  font-size: 5rem;
+  font-style: italic;
+  text-shadow: black;
 }
 
 .footer {
@@ -235,7 +251,6 @@ body {
   }
 }
 .section-cards__header {
-  text-transform: uppercase;
   font-size: 1.5rem;
   text-align: center;
 }
@@ -245,7 +260,13 @@ body {
 }
 .section-cards__products-search-container {
   padding: 1rem;
-  background-color: cornflowerblue;
+  background-color: #f65601;
+  color: white;
+  height: 150px;
+  background-image: url(/assets/images/IMG-20221202-WA0024.jpg);
+  background-size: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .cards-container {
