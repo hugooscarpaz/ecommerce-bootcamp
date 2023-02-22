@@ -1,9 +1,9 @@
 .card {
    margin: 1rem;
-   border: 1px solid red;
+   border: 1px solid white;
    &__header {
       height: 120px;
-      background-color: orange;
+      background-color:#F65601;
    }
    &__img {
       height: 120px;
@@ -14,7 +14,7 @@
    &__title {
       font-weight: 500;
       font-size: 1.5rem;
-      border-bottom: 2px solid orangered;
+      border-bottom: 2px solid white;
    }
    &__description {
       padding: 1.5rem 0;
@@ -22,7 +22,7 @@
    &__price {
       font-weight: 500;
       font-size: 1.25rem;
-      color: $color-bg-primary;
+      color: black;
    }
    &__footer {
       display: flex;
@@ -30,12 +30,12 @@
       padding: 1rem;
    }
    &__date {
-      color: aqua;
+      color: background-image: url("https://picsum.photos/id/237/600/400");;
    }
    &__btn-container {
    }
    &__btn {
       padding: 1rem;
-      background-color: dodgerblue;
+      background-color: red;
    }
 }
