@@ -204,10 +204,15 @@ body {
 .section-cards__title {
   font-family: "scriptina";
   font-size: larger;
-  color: white;
-  font-size: 5rem;
+  color: #F65601;
+  font-size: 8rem;
   font-style: italic;
-  text-shadow: black;
+  text-shadow: -2px 0 white, 0 2px black, 2px 0 black, 0 -2px black;
+}
+.section-cards__products-count {
+  margin-top: 3px;
+  font-size: small;
+  color: orangered;
 }
 
 .footer {
@@ -267,6 +272,7 @@ body {
   background-size: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  margin: 5px;
 }
 
 .cards-container {
