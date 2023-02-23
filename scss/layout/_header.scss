@@ -16,7 +16,7 @@
         border-radius: 50%;
     }
     &__menu-label{
-        color: white;
+        color: black;
         //margin-left: auto;
         height: 42%;
         background-color: #F65601;
@@ -44,13 +44,13 @@
 
     &__menu-icon{
         height: 2px;
-        background-color: #F65601;
+        background-color: black;
         width: 18px;
         position: relative;
         &::after,&::before{
             content: '';
             height: 2px;
-            background-color: #F65601;
+            background-color: black;
             position: absolute;
             width: 100%;
 
@@ -99,7 +99,7 @@
         }
     }
     &__nav-link{
-        color: #F65601;
+        color: black;
     }
 }
 

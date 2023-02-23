@@ -1,38 +1,65 @@
 .card {
    margin: 1rem;
+   border-radius: 5px;
+   flex-grow: 1;
    border: 1px solid white;
+   background-color: #F65601;
    &__header {
       height: 120px;
-      background-color:#F65601;
-   }
+      }
    &__img {
+      padding-top: 5px;
       height: 120px;
+      width: 100%;
+      object-fit:contain;
+      margin-left: auto;
+      margin-right: auto; 
+      
+      
+   }
+
+   &__img:hover{
+      transform: scale(1.1);
    }
    &__body {
       padding: 1rem;
+      
    }
    &__title {
       font-weight: 500;
-      font-size: 1.5rem;
+      text-align: center;
+      font-size: 1.2rem;
+      color:white;
+   
       border-bottom: 2px solid white;
    }
    &__description {
-      padding: 1.5rem 0;
+      padding: 1.5rem 0.5rem;
+      font-size: 0.75rem;
+      color:white;
+   
+      text-align: justify;
+      max-height: fit-content;
    }
    &__price {
       font-weight: 500;
+      padding-left: 0.5rem;
       font-size: 1.25rem;
       color: black;
+   
    }
    &__footer {
       display: flex;
       justify-content: space-between;
       padding: 1rem;
+   
    }
    &__date {
-//      color: background-image: url("https://picsum.photos/id/237/600/400");;
+      color: black;
+      //background-image: url("https://picsum.photos/id/237/600/400");;
    }
    &__btn-container {
+      color: white;
    }
    &__btn {
       padding: 1rem;
