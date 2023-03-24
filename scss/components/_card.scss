@@ -37,9 +37,11 @@
       padding: 1.5rem 0.5rem;
       font-size: 0.75rem;
       color:white;
-   
+      overflow: hidden;
       text-align: justify;
       max-height: fit-content;
+      margin-bottom: 8px;
+      height: 250px;
    }
    &__price {
       font-weight: 500;
@@ -66,3 +68,4 @@
       background-color: red;
    }
 }
+

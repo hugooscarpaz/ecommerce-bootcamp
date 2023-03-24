@@ -15,6 +15,7 @@ a {
 
 html {
   font-size: 12px;
+  background-color: black;
 }
 
 @font-face {
@@ -69,9 +70,12 @@ body {
   padding: 1.5rem 0.5rem;
   font-size: 0.75rem;
   color: white;
+  overflow: hidden;
   text-align: justify;
   max-height: -moz-fit-content;
   max-height: fit-content;
+  margin-bottom: 8px;
+  height: 250px;
 }
 .card__price {
   font-weight: 500;
@@ -238,10 +242,27 @@ body {
   color: black;
 }
 
+.whatsapp-container {
+  /* margin: 15px; */
+  position: fixed;
+  right: 15px;
+  bottom: 100px;
+  /* background-color: black; */
+  color: dodgerblue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.whatsapp-container__img {
+  width: 75px;
+}
+
 .footer {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   background-color: black;
+  margin: 0 10px;
 }
 .footer__column {
   padding: 1rem 1.5rem;
