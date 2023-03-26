@@ -330,4 +330,103 @@ body {
   .section-cards__header {
     display: flex;
   }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.contact {
+  position: relative;
+  min-height: 100vh;
+  padding: 50px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.contact__content {
+  max-width: 800px;
+  text-align: center;
+}
+.contact__content h1 {
+  font-size: 3rem;
+  color: #F65601;
+  font-weight: 500;
+}
+.contact__content p {
+  font-size: 1rem;
+  color: #F65601;
+}
+.contact__container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin-top: 30px;
+}
+.contact__container-contactForm {
+  position: relative;
+  width: 40%;
+  background-color: #fff;
+  min-height: 100px;
+  padding: 60px;
+}
+.contact__container-contactForm h2 {
+  font-size: 2rem;
+  color: black;
+  font-weight: 500;
+}
+.contact__container-inputContainer {
+  position: relative;
+  width: 100%;
+  margin-top: 20px;
+}
+.contact__container-inputContainer input, .contact__container-inputContainer textarea {
+  width: 100%;
+  padding: 5px 0;
+  font-size: 1.1 rem;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 1px solid black;
+  outline: none;
+  resize: none;
+}
+.contact__container-inputContainer span {
+  position: absolute;
+  left: 0;
+  pointer-events: none;
+  padding: 5px 0;
+  font-size: 1.1 rem;
+  margin: 10px 0;
+  color: black #666;
+  transition: 0.5s;
+}
+.contact__container-inputContainer input:focus ~ span, .contact__container-inputContainer textarea:focus ~ span, .contact__container-inputContainer input:valid ~ span, .contact__container-inputContainer textarea :valid ~ span {
+  color: #F65601;
+  font-size: 0.9rem;
+  transform: translateY(-20px);
+}
+.contact__container-inputContainer input[type=submit] {
+  width: 100px;
+  background: black;
+  color: #F65601;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 1.1rem;
+}
+
+@media screen and (max-width: 991px) {
+  .contact {
+    padding: 50px;
+  }
+  .contact__container {
+    flex-direction: column;
+  }
+  .contact__container-contactForm, .contact__container-contactInfo {
+    width: 100%;
+  }
 }/*# sourceMappingURL=main.css.map */

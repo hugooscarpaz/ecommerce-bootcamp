@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contact {
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    &__content{
+        max-width: 800px;
+        text-align: center;
+    }
+    &__content h1 {
+        font-size: 3rem;
+        color: $color-bg-primary;
+        font-weight: 500;
+    }
+    &__content p {
+        font-size: 1rem;
+        color: $color-bg-primary;
+        }
+    &__container{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        margin-top: 30px;
+    }
+    
+    &__container-contactForm{
+        position: relative;
+        width: 40%;
+        background-color: #fff;
+        min-height: 100px;
+        padding: 60px;
+    }
+    &__container-contactForm h2{
+        font-size: 2rem;
+        color: $color-bg-secundary;
+        font-weight: 500;
+    }
+    &__container-inputContainer{
+        position: relative;
+        width: 100%;
+        margin-top: 20px;
+    }
+    &__container-inputContainer input,
+    &__container-inputContainer textarea {
+        width: 100%;
+        padding:  5px 0;
+        font-size: 1.1 rem;
+        margin: 10px 0;
+        border: none;
+        border-bottom: 1px solid$color-bg-secundary;
+        outline: none;
+        resize: none;
+    }
+    &__container-inputContainer span{
+        position: absolute;
+        left: 0;
+        pointer-events: none;
+        padding:  5px 0;
+        font-size: 1.1 rem;
+        margin: 10px 0;
+        color:$color-bg-secundary#666;
+        transition: 0.5s;
+    }
+    &__container-inputContainer input:focus ~ span,
+    &__container-inputContainer textarea:focus ~ span,
+    &__container-inputContainer input:valid ~ span,
+    &__container-inputContainer textarea :valid ~ span{
+        color:$color-bg-primary;
+        font-size: 0.9rem;
+        transform: translateY(-20px);
+    }
+    &__container-inputContainer input[type="submit"]{
+        width: 100px;
+        background: $color-bg-secundary;
+        color:$color-bg-primary;
+        border: none;
+        cursor:pointer;
+        padding: 10px;
+        font-size: 1.1rem;
+    }
+
+}
+
+@media screen and (max-width: 991px){
+    .contact{
+        padding: 50px;
+
+
+    
+    &__container{
+        flex-direction: column;
+
+    }
+    &__container-contactForm,
+    &__container-contactInfo{
+        width: 100%;
+    }
+}
+}
