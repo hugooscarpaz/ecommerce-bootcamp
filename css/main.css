@@ -30,6 +30,18 @@ html {
     font-size: 16px;
   }
 }
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
 body {
   font-family: "Inter", Arial, sans-serif;
 }
@@ -454,11 +466,16 @@ body {
 }
 
 .main-container {
+  min-height: 100vh;
   margin: 1rem 5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 5rem;
+}
+
+.main-title {
+  padding: 50px 10px;
 }
 
 .main-title,
@@ -474,7 +491,6 @@ label {
 }
 
 .form {
-  background-color: white;
   color: #F65601;
   box-shadow: 0px 0px 0.8rem black;
   padding: 1.8rem;
@@ -485,6 +501,7 @@ label {
   display: flex;
   flex-direction: column;
   margin-bottom: 0.8rem;
+  background-color: black;
 }
 
 .form-container__input {
@@ -492,6 +509,13 @@ label {
   padding: 0.5rem;
   border-radius: 0.2rem;
   color: #F65601;
+  border: none;
+  border-bottom: 1px solid black;
+}
+
+.form-container__input input :focus,
+.form-container__input input :valid {
+  background-color: black;
   border: none;
   border-bottom: 1px solid black;
 }
@@ -543,5 +567,8 @@ label {
     padding: 5px;
     margin: 5px;
     justify-content: space-between;
+  }
+  .form-container__radio {
+    flex-direction: row;
   }
 }/*# sourceMappingURL=main.css.map */
