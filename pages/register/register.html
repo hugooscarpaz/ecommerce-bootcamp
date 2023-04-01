@@ -53,7 +53,8 @@
     <h1 class="main-title">REGISTRO DE USUARIO</h1>
 
     <main class="main-container">
-      <form class="form">
+      <form class="form" 
+            id="registerForm">
         <div class="form-container">
           <label id="email-label" for="name">Nombre</label>
           <input
@@ -102,6 +103,7 @@
             class="form-container__input"
             type="password"
             id="rpassword"
+            name="rpassword"
             required
             class="form-container__control"
             minlength="6"
@@ -431,7 +433,7 @@
         </div>
 
         <div class="form-container-btn">
-          <button type="submit" class="btn-container__control" id="sumbmit">
+          <button type="submit" class="btn-container__control" id="registerSubmit">
             Enviar
           </button>
         </div>
@@ -497,7 +499,7 @@
 
         </div>
     </footer>
-
+<script src="/js/register.js"></script>
 </body>
 
 </html>
