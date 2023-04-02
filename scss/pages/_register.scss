@@ -6,18 +6,17 @@
 }
 
 .main-container {
-//    position: relative;
-    min-height: 100vh;
-    margin: 1rem 5rem;
+//    width: 600px;
+    margin: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 5rem;
+    margin-bottom: 1rem;
 }
 
 .main-title{
 //    position: relative;
-    padding: 50px 10px;
+    padding: 50px 10px 10px 10px;
 }
 
 .main-title,
@@ -29,42 +28,53 @@ label {
 .main-title {
     text-align: center;
     color: white;
-    //    border-bottom: 0.1rem solid green;
-    margin: 1.5rem 2rem;
+    margin: 0.5rem 1rem;
 }
 
 .form {
  //   background-color:;
     color: $color-bg-primary;
-    box-shadow: 0px 0px 0.8rem black;
-    padding: 1.8rem;
+//    box-shadow: 0px 0px 0.8rem black;
+    padding: 0.5rem;
 }
 
 .form-container,
 .form-container-btn {
+//    width: 100%;
     display: flex;
     flex-direction: column;
-    margin-bottom: 0.8rem;
+    justify-content:space-between;
+    margin-bottom: 0.5rem;
     background-color: $color-bg-secundary;
 
 }
+.form-container-label{
+    color: $color-bg-primary;
+} 
 
 .form-container__input {
     width: 100%;
-    //   height: 2rem;
+    background: $color-bg-secundary;
     padding: 0.5rem;
     border-radius: 0.2rem;
-    color: $color-bg-primary;
+    color: white;
     border: none;
-    border-bottom: 1px solid $color-bg-secundary;
-}    
-    .form-container__input input :focus,
-    .form-container__input input :valid
-    {
-        background-color: $color-bg-secundary;
+    border-bottom: 1px solid $color-bg-primary;
+    outline: none;
+    &:valid{
+        background: $color-bg-secundary;
+        color: white;
         border: none;
-        border-bottom: 1px solid $color-bg-secundary;
+        border-bottom: 1px solid $color-bg-primary;
     }
+    &:focus{
+        background: $color-bg-secundary;
+        color: $color-bg-primary;
+        border: none;
+        border-bottom: 1px solid $color-bg-primary;
+    }
+}    
+
 
 
 /* .form-container__input {
@@ -87,30 +97,33 @@ label {
 }
 
 .btn-container__control {
-    width: 5rem;
-    background-color: rgb(22, 51, 179);
+    width: 6rem;
+    background-color: $color-bg-primary;
     color: white;
     padding: 3px;
     text-align: center;
-    border-radius: 0.2rem;
-    border: rgb(22, 51, 179) solid 1px;
+    border-radius: 0.3rem;
+    border: $color-bg-primary solid 1px;
     margin-top: 0.5rem;
+    &:hover{
+        border:white solid 1px;
+        background-color: $color-bg-secundary;
+        color : $color-bg-primary;
+    }
 }
 
 .form-container-btn {
     align-items: left;
 }
 
-.btn {
-    background-color: #1b3b97;
-    color: white;
-}
+
 
 @media screen and (min-width: 600px) {
     .form-container {
+        
         width: 100vh;
-    //    flex-direction: row;
-        justify-content: space-between;
+        //flex-direction: row;
+        justify-content:space-around ;
 
         &__input {
             padding: 5px;

@@ -1,19 +1,19 @@
 @import "abstracts/variables";
 
 @import "base/reset";
-
-
 @import "base/typography";
 
 @import "components/card";
+@import "components/alert-dialog";
 
 @import "layout/header";
 @import "layout/main";
 @import "layout/footer";
+@import "layout/main";
 
 @import "pages/home";
 @import "pages/contact";
-@import "pages/register"
+@import "pages/register";
 
 
 
