@@ -103,7 +103,8 @@ function showAlert(text, type = 'sucess') {
         alertDialog.style.backgroundColor = 'red';
     }
     if(type === 'warning') {
-        alertDialog.style.backgroundColor =  'orangered'
+        alertDialog.style.backgroundColor =  'pink';
+        alertDialog.style.color = 'red';
     }
     // Para demorar su aparición luego de haberlo creado lineas anterior con document createElement
     setTimeout(() => alertDialog.classList.add('show'), 10)
@@ -116,5 +117,16 @@ function showAlert(text, type = 'sucess') {
         }, 1000)
         // window.location.href = '/pages/login/login.html'     
     }, 3000);
+}
 
+// Funciones con parámetros nombrados
+function customFont({ color, size, weight }) {
+    const divTexto = document.createElement('p');
+    divTexto.innerText = 'Un texto a modificar';
+
+    divTexto.style.color = color || '#DDF40A';
+    divTexto.style.fontSize = size || '16px';
+    divTexto.style.fontWeight = weight || 500;
+
+    document.body.appendChild(divTexto);
 }
